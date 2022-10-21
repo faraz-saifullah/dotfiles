@@ -113,3 +113,5 @@ aws eks update-kubeconfig --region us-east-1 --name $KUBE_CLUSTER_NAME || true
 # echo "Setting up tctl"
 # docker rm -f temporal-admin-tools 2> /dev/null || true
 # sudo docker run --name temporal-admin-tools -d --rm -ti --entrypoint /bin/bash --network host --env TEMPORAL_CLI_ADDRESS=localhost:7233 temporalio/admin-tools:1.14.0
+
+code --install-extension esbenp.prettier-vscode
